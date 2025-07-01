@@ -1,0 +1,173 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Globals */
+:root {
+    --cream: #F4EED7;
+    --white: rgb(255, 255, 255);
+    --tan: #7b6e5d;
+}
+
+body {
+    background: url(logo/BackImage2.jpg) no-repeat center/cover;
+}
+
+/* Navigation Bar */
+#navBarContainer {
+    position: sticky;
+    top:0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width:100%;
+    height: 110px;
+    background-color: black;
+
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+/* three bar icon */
+#icon1 {
+    font-size: 20px;
+    margin-right: 16px;
+    /* color: var(--tan); */
+    color: rgb(199, 199, 199);
+}
+/* side bar */
+ .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100dvh;
+        width: 100dvw;
+        z-index: 999;
+        list-style: none;
+        border-top-left-radius: 5px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        backdrop-filter: blur(20px);
+
+      }
+
+      .sidebar li {
+        height: 60px;
+        width: 100%;
+
+      }
+
+      .sidebar a {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 18px;
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        transition: all 200ms ease-out;
+      }
+
+      .sidebar li a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        color: rgb(0, 0, 0);
+      }
+
+/* logo */
+#imglogo {
+    padding: 8px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* logo Name */
+#liLogo {
+    display: flex;
+    align-items: center;
+}
+
+#liLogo h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* color: var(--tan); */
+    color:rgb(199, 199, 199);
+}
+
+/* main page Quote */
+#divQuote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    padding: 15px;
+    backdrop-filter: blur(24px);
+    /* border-radius: 25px; */
+}
+
+#p1Quote {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    text-align: center;
+    font-size: 50%;
+    padding: 5px;
+    color: var(--cream);
+    border: 1px solid var(--cream);
+    border-radius: 15px;
+}
+
+#h2Quote {
+    width: 300px;
+    font-size: 30px;
+    text-align: center;
+    color: var(--white);
+
+}
+
+#p2Quote {
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#spanQuote {
+    display: flex;
+    gap: 40px;
+    padding: 16px;
+}
+
+.Quotebuttons {
+    width: 140px;
+    height: 45px;
+    border: none;
+    border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.33);
+   color: var(--white);
+   box-shadow: -10px 10px 45px 1px rgb(0, 0, 0);
+   cursor:pointer;
+}
