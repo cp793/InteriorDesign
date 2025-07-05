@@ -10,7 +10,17 @@
   font-weight: 450;
   font-style: normal;
 }
-
+/* custom fonts */
+    @font-face {
+    font-family: 'Mistral';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mistral'), url('MistralFont/MISTRAL.woff') format('woff');
+    }
+    @font-face {
+      font-family: "Ginger";
+      src:local("Ginger"), url(GingerFont/Ginger.woff) format("woff");
+    }
 /* Globals */
 :root {
   --cream: #F4EED7;
@@ -101,7 +111,6 @@ body {
 }
 .sidebar li a:active{
  background-color: rgba(255, 255, 255, 0.3);
- /* color:rgba(0, 0, 0, 0.489); */
 }
 
 /* three bar Toggle */
@@ -185,14 +194,16 @@ input:checked~.sidebar {
   text-decoration: none;
 }
 
-/* logo Name */
+/* Logo Name */
 #liLogo {
   display: flex;
   align-items: center;
 }
 
 #liLogo h1 {
-  /* color: var(--tan); */
+  /* font-family: "Mistral"; */
+  font-family: "Ginger";
+  /* font-size: 30px; */
   color: rgb(199, 199, 199);
 }
 
@@ -201,20 +212,20 @@ input:checked~.sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* min-width: 100%; */
   margin-right: 12px;
   margin-left: 12px;
   margin-top: 24px;
   margin-bottom: 10%;
-  padding: 12px;
+  padding:24px 0;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(20px);
 }     
 
 #p1Quote {
   /* this is in logo */
+  /* font-family: "Mistral"; */
   text-align: center;
-  font-size: 48%;
+  font-size: 40%;
   padding: 5px;
   color: var(--cream);
 
@@ -228,7 +239,7 @@ input:checked~.sidebar {
 }
 
 #p2Quote {
-   padding-top: 24px;
+  padding-top: 24px;
   text-align: center;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.584);
