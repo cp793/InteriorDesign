@@ -62,6 +62,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -76,6 +77,7 @@ body {
   overflow: hidden;
   height: 60px;
   width: 100%;
+    /* border-radius: 20px; */
 }
 
 .sidebar a {
@@ -88,17 +90,18 @@ body {
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  transition: all 0.4s ease-out;
+  transition: all 0.2s ease-out;
   transform-origin: left center;
   /*dont let overflow to left*/
 
 }
-
-.sidebar li a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-
+.sidebar li a:hover{
+  text-shadow: -0px 2px 6px white;
+  font-size: 14px;
+}
+.sidebar li a:active{
+ background-color: rgba(255, 255, 255, 0.3);
+ /* color:rgba(0, 0, 0, 0.489); */
 }
 
 /* three bar Toggle */
@@ -129,13 +132,11 @@ input {
   border-radius: 50px;
   transition: 0.6s ease;
 }
-
 .top_line {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .middle_line {
   top: 50%;
   left: 50%;
